@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "/Users/chris/personal-workspace/lyfestyal/python-src/sample_sentences.json",
+                "Refer to people living in Australia as 'Australians'. The meaning of the word 'Australian' can vary in different contexts. It could mean anyone who lives in Australia. Legally, it could mean only people who are Australian citizens. Depending on the type of content, you might need to explain what you mean by the term. For example, 'Australian students' could refer to all students in Australia including international students. Mention heritage, cultural or other national identity only if it's necessary. Consult guidance on how to refer to nationalities, peoples and places outside of Australia. When you specify a dual identity or other heritage as an adjective, connect the reference and the term 'Australian' with an en dash. Write this: The Japanese-Australian community takes part in the Summer Festival in Melbourne. [Dual identity expressed as an adjective] Japanese Australians take part in the Summer Festival in Melbourne. [Dual identity expressed as a noun phrase] Not this: Many Japanese take part in the Summer Festival in Melbourne. [Does not convey dual identity of community or individuals] To refer to people who have recently arrived in Australia, use the words: 'migrants', 'immigrants', 'new arrivals'. These words don't say anything about a person's culture or language: they are neutral. Don't use these words once people have settled and become Australian citizens. They suggest a temporary or marginal status.",
+                "https://www.stylemanual.gov.au/accessible-and-inclusive-content/inclusive-language/cultural-and-linguistic-diversity#refer_to_people_living_in_australia_as_australians"
+            ]
+        }
+    ]
+}

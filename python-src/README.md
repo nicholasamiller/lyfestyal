@@ -1,0 +1,8 @@
+- Install Ollama: https://ollama.com/
+- Using Ollama from the command line, pull down the llama3.1:8b model
+- In this directory, create a python virtual environment, then activate it:
+    - python3 -m venv myenv
+    - source myenv/bin/activate (this step my differ on Windows)
+- Install the ollama Python API: "pip install Ollama:
+- run "python *'path to JSON file with sentences'* 'rule' 'rule metadata'
+- If using VSCode, you can copy vscode-launch.json in this directory to .vscode/launch.json. Modify the file path in the list of arguments then you should be able to run/debug.
