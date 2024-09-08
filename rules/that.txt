@@ -1,0 +1,1 @@
+Avoid using the word 'that' as much as possible.  Only use it when gramatically unavoidable.  Troy really hates the word 'that'.  For example, instead of saying "we know that we should waste time on minor details", say "we know we should not waste time on minor details". 
