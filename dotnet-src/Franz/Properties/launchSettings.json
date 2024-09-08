@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Franz": {
-      "commandName": "Project",
-      "commandLineArgs": "--inDocx \"C:\\Users\\nick\\Documents\\GitHub\\lyfestyal\\presentation\\slides\\doc3.docx\" --outDocx \"C:\\Users\\nick\\Documents\\GitHub\\lyfestyal\\presentation\\slides\\doc3_out.docx\" --ruleFiles \"C:\\Users\\nick\\Documents\\GitHub\\lyfestyal\\rules\\inclusive.json\" --ruleFiles \"C:\\Users\\nick\\Documents\\GitHub\\lyfestyal\\rules\\that.json\" "
-    }
-  }
-}

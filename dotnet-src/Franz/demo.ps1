@@ -1,0 +1,1 @@
+& dotnet run -- --inDocx "C:\Users\nick\Documents\GitHub\lyfestyal\dotnet-src\Franz\testDoc.docx" --ruleFiles "C:\Users\nick\Documents\GitHub\lyfestyal\rules\inclusive.json" --ruleFiles "C:\Users\nick\Documents\GitHub\lyfestyal\rules\that.json"

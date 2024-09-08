@@ -20,7 +20,7 @@ public static class Functions
 
             foreach (var paragraph in paragraphs)
             {
-                var textId = paragraph.GetAttribute("textId", "http://schemas.microsoft.com/office/word/2010/wordml");
+                var textId = paragraph.GetAttribute("paraId", "http://schemas.microsoft.com/office/word/2010/wordml");
                 if (textId != null)
                 {
                     var paragraphText = paragraph.InnerText;
@@ -60,7 +60,7 @@ public static class Functions
 
         // Find the paragraph with the specified textId
         var paragraph = wordDoc.MainDocumentPart.Document.Body.Descendants<Paragraph>()
-            .FirstOrDefault(p => p.GetAttribute("textId", "http://schemas.microsoft.com/office/word/2010/wordml").Value == textId);
+            .FirstOrDefault(p => p.GetAttribute("paraId", "http://schemas.microsoft.com/office/word/2010/wordml").Value == textId);
 
         if (paragraph != null)
         {
