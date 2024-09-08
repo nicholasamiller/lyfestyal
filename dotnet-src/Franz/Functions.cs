@@ -1,12 +1,16 @@
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
+using OpenAI.Chat;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
+
 public static class Functions
 {
     
+    
+
     public static List<(string TextId, string Text)> ExtractTextIdsWithTexts(WordprocessingDocument wordDoc)
     {
         var textIdWithTexts = new List<(string TextId, string Text)>();
@@ -27,7 +31,7 @@ public static class Functions
         return textIdWithTexts;
     }
 
-    public static void AddCommentToTextId(WordprocessingDocument wordDoc, string textId, string commentText, string author = "Author", string initial = "A")
+    public static void AddCommentToTextId(WordprocessingDocument wordDoc, string textId, string commentText, string sourceReference, string author = "Franz", string initial = "A")
     {
         // Ensure the document has a comments part
         var commentsPart = wordDoc.MainDocumentPart.GetPartsOfType<WordprocessingCommentsPart>().FirstOrDefault();
@@ -51,7 +55,7 @@ public static class Functions
             Initials = initial,
             Date = DateTime.Now
         };
-        newComment.AppendChild(new Paragraph(new Run(new Text(commentText))));
+        newComment.AppendChild(new Paragraph(new Run(new Text(commentText + $"  (Source: {sourceReference})"))));
         comments.AppendChild(newComment);
 
         // Find the paragraph with the specified textId
